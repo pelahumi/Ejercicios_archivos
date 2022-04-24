@@ -30,7 +30,7 @@ class Notas():
             dicccionario = {"Nombre" : "{}".format(nombre_completo[i]), "Asistencia" : asistencia[i], "Primer parcial" : parcial1[i], "Segundo parcial" : parcial2[i]}
             #Añadimos a la lista que creamos al principio cada diccionario
             lista_diccionarios.append(dicccionario)
-        return lista_diccionarios
+        return "Lista con las notas de los parciales y asistencia a clase: {}".format(lista_diccionarios)
     
     def ejercicio2(self):
         #Reutilizando el codigo del metodo anterior añadimos el nuevo par de elementos a cada diccionario
@@ -57,7 +57,7 @@ class Notas():
             dicccionario = {"Nombre" : "{}".format(nombre_completo[i]), "Asistencia" : asistencia[i], "Primer parcial" : parcial1[i], "Segundo parcial" : parcial2[i], "Nota final" : (parcial1[i] * 0.3 + parcial2[i] * 0.3 + ordinario_practicas * 0.4)}
             #Añadimos a la lista que creamos al principio cada diccionario
             lista_diccionarios.append(dicccionario)
-        return lista_diccionarios
+        return "Lista con las notas de los parciales, asistencia a clase y nota final: {}".format(lista_diccionarios)
     
     def ejercicio3(self):
         data = pd.read_csv(self.archivo)
@@ -78,6 +78,6 @@ class Notas():
                 aprobados.append(nombre_completo[i])
             else:
                 suspensos.append(nombre_completo[i])
-        return aprobados, suspensos
+        return "Lista con los alumnos aprbados: {}, y otra con los suspensos: {}".format(aprobados, suspensos)
 
 
