@@ -44,7 +44,7 @@ class Notas():
 
         data = data.sort_values("Nombre completo")
 
-        #Cambiamos los valores nulos de las prácticas por un 0
+        #Cambiamos los valores nulos del examen de prácticas por un 0
         data["OrdinarioPracticas"].fillna(0, inplace= True)
 
         asistencia = list(data["Asistencia"])
@@ -58,4 +58,7 @@ class Notas():
             #Añadimos a la lista que creamos al principio cada diccionario
             lista_diccionarios.append(dicccionario)
         return lista_diccionarios
+    
+    def ejercicio3(self):
+        
 
