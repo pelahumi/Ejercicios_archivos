@@ -60,5 +60,16 @@ class Notas():
         return lista_diccionarios
     
     def ejercicio3(self):
-        
+        data = pd.read_csv(self.archivo)
+
+        #Creamos las listas de alumnoz aprobados y suspensos
+        aprobados = []
+        suspensos = []
+
+        asistencia = list(data["Asistencia"])
+        parcial1 = list(data["Parcial1"])
+        parcial2 = list(data["Parcial2"])
+        nombre_completo = list(data["Nombre completo"])
+        ordinario_practicas = list(data["OrdinarioPracticas"])
+
 
