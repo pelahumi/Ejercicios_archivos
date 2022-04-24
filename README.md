@@ -106,7 +106,7 @@ class Notas():
 
 ### UML<a name="3"></a>
 
-![UML](https://github.com/pelahumi/Ejercicios_archivos/blob/main/UML/archivos.png)
+<h1 align="center">![UML](https://github.com/pelahumi/Ejercicios_archivos/blob/main/UML/archivos.png)
 
 ---
 
