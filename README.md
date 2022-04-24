@@ -17,7 +17,7 @@ En este ejercicio hemos trabajado con un archivo csv en el que aparecen las nota
 ---
 
 ### Código de clases<a name="2"></a>
-```
+```python3
 
 #Importamos pandas para trabajar con el archivo csv
 import pandas as pd
