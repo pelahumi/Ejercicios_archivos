@@ -72,4 +72,12 @@ class Notas():
         nombre_completo = list(data["Nombre completo"])
         ordinario_practicas = list(data["OrdinarioPracticas"])
 
+        for i in range(len(nombre_completo)):
+            nota_final = parcial1[i] * 0.3 + parcial2[i] * 0.3 + ordinario_practicas * 0.4
+            if asistencia >= 0.75 and parcial1 >= 4 and parcial2 >= 4 and ordinario_practicas >= 4 and nota_final >= 5:
+                aprobados.append(nombre_completo[i])
+            else:
+                suspensos.append(nombre_completo[i])
+        return aprobados, suspensos
+
 
