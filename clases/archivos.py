@@ -20,6 +20,13 @@ class Notas():
         data = data.sort_values("Nombre completo")
 
         #Hacemos una lista con cada columna del csv
+        asistencia = list(data["Asistencia"])
         parcial1 = list(data["Parcial1"])
         parcial2 = list(data["Parcial2"])
+        nombre_completo = list(data["Nombre completo"])
+
+        #Creamos un bucle que vaya recorriendo todas las filas y meta los datos en un diccionario
+        for i in range(len(nombre_completo)):
+            dicccionario = 
+        
 
