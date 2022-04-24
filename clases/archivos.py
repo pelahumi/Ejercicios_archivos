@@ -27,6 +27,9 @@ class Notas():
 
         #Creamos un bucle que vaya recorriendo todas las filas y meta los datos en un diccionario
         for i in range(len(nombre_completo)):
-            dicccionario = 
+            dicccionario = {"Nombre" : "{}".format(nombre_completo[i]), "Asistencia" : asistencia[i], "Primer parcial" : parcial1[i], "Segundo parcial" : parcial2[i]}
+            #Añadimos a la lista que creamos al principio cada diccionario
+            lista_diccionarios.append(dicccionario)
+        return lista_diccionarios
         
 
