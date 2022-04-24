@@ -4,10 +4,10 @@ Haz click [aquí](https://github.com/pelahumi/Ejercicios_archivos) para acceder 
 ---
 
 ## ÍNDICE
-  - Resumen(#1)  
-  - Código de clases(#2)
-  - UML de la clase(#3)  
-  - Código del main(#4)
+  - [Resumen](#1)    
+  - [Código de clases](#2) 
+  - [UML de la clase](#3)  
+  - [Código del main](#4)
 
 ---
 
