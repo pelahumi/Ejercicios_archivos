@@ -31,5 +31,31 @@ class Notas():
             #Añadimos a la lista que creamos al principio cada diccionario
             lista_diccionarios.append(dicccionario)
         return lista_diccionarios
-        
+    
+    def ejercicio2(self):
+        #Reutilizando el codigo del metodo anterior añadimos el nuevo par de elementos a cada diccionario
+        data = pd.read_csv(self.archivo) 
+
+        lista_diccionarios = []
+    
+        data["Nombre completo"] = data["Apellidos"] + ", " + data["Nombre"]
+        data.drop('Apellidos', inplace=True, axis=1) 
+        data.drop('Nombre', inplace=True, axis=1) 
+
+        data = data.sort_values("Nombre completo")
+
+        #Cambiamos los valores nulos de las prácticas por un 0
+        data["OrdinarioPracticas"].fillna(0, inplace= True)
+
+        asistencia = list(data["Asistencia"])
+        parcial1 = list(data["Parcial1"])
+        parcial2 = list(data["Parcial2"])
+        nombre_completo = list(data["Nombre completo"])
+        ordinario_practicas = list(data["OrdinarioPracticas"])
+
+        for i in range(len(nombre_completo)):
+            dicccionario = {"Nombre" : "{}".format(nombre_completo[i]), "Asistencia" : asistencia[i], "Primer parcial" : parcial1[i], "Segundo parcial" : parcial2[i], "Nota final" : (parcial1[i] * 0.3 + parcial2[i] * 0.3 + ordinario_practicas * 0.4)}
+            #Añadimos a la lista que creamos al principio cada diccionario
+            lista_diccionarios.append(dicccionario)
+        return lista_diccionarios
 
